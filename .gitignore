@@ -24,4 +24,6 @@ db/*
 cmake-build/*
 build/*
 # public/frontend/assets
-public/frontend/assets/images/*
+# front/frontend/assets/images/*.jpeg
+front/frontend/assets/texture/
+front/frontend/assets/models/
