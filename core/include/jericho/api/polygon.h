@@ -276,7 +276,7 @@ std::string apiMongoDatabases(std::unordered_map<std::string, std::string> args,
         return JsonResponse::error(404, "Invalid token provided");
     }
 
-    std::vector<std::string> result = router->celerity()->mongo()->databases();
+    // std::vector<std::string> result = router->celerity()->mongo()->databases();
 
     return JsonResponse::success(200, "Suceesfully return mongo databases");
 
@@ -287,7 +287,7 @@ std::string apiMongoInsert(std::unordered_map<std::string, std::string> args, Ro
         return JsonResponse::error(404, "Invalid token provided");
     }
 
-    std::vector<std::string> result = router->celerity()->mongo()->databases();
+    // std::vector<std::string> result = router->celerity()->mongo()->databases();
 
     return JsonResponse::success(200, "Suceesfully return mongo databases");
 

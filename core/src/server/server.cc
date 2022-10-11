@@ -2,7 +2,7 @@
 #include "server/server.h"
 #include "server/request.h"
 #include "server/fetch.h"
-#include "celerity/celerity.h"
+// #include "celerity/celerity.h"
 #include "message/message_buffer.h"
 #include "message/message_broker.h"
 

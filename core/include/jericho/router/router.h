@@ -13,7 +13,7 @@
 #include "server/defs.h"
 #include "server/fetch.h"
 #include "server/response.h"
-#include "celerity/celerity.h"
+// #include "celerity/celerity.h"
 #include "cluster/cluster.h"
 #include "util/iters.h"
 #include "router/route_registry.h"
@@ -26,16 +26,16 @@ class Router {
     RouteRegistry* _registry = nullptr;
     ThreadPool* _tpool;
     WorkerThread _worker;
-    Celerity* _celerity;
+    // Celerity* _celerity;
     Cluster* _cluster;
 
   public:
-    Router(ThreadPool* tpool, WorkerThread worker, Cluster* cluster, Celerity* celerity) {
+    Router(ThreadPool* tpool, WorkerThread worker, Cluster* cluster) {
         _registry = new RouteRegistry;
         _worker = worker;
         _tpool = tpool;
         _cluster = cluster;
-        _celerity = celerity;
+        // _celerity = celerity;
     }
 
     ~Router() {
@@ -74,7 +74,7 @@ class Router {
 
     ThreadPool* tpool() const { return _tpool; }
 
-    Celerity* celerity() const { return _celerity; }
+    // Celerity* celerity() const { return _celerity; }
 
     Cluster* cluster() const { return _cluster; }
 

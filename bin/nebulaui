@@ -6,8 +6,10 @@ if [[ "$1" == "install" ]]; then
         echo -e "\033[0mNebulaUI already installed.\033[0m"
     else
         git clone https://frankbenderumn:${GITHUB_TOKEN}@github.com/frankbenderumn/nebulaui.git
-        git checkout v2
-        cd nebulaui
+        # git checkout v2
+        mv nebulaui public
+        cd public
+        git checkout master
         # mv frontend ${ROOTDIR}/frontend
         # cd ..
         # rm -rf nebulaui

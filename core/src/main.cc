@@ -101,7 +101,7 @@ int main(int argc, char* argv[]) {
     SSL_CTX* ctx = ssl_init();
     if (ctx == NULL) { return 1; }
 
-    Celerity* celerity = new Celerity;
+    // Celerity* celerity = new Celerity;
     ClusterIndex* index = new ClusterIndex;
 
     ClusterNode* boss = new ClusterNode("127.0.0.1", std::string(argv[1]), "./public/"+std::string(argv[3]), index);
@@ -122,7 +122,8 @@ int main(int argc, char* argv[]) {
     Cluster* cluster = new Cluster(CLUSTER_MAIN, boss, index);
     SOCKET server = socket_create(0, port, 1, AF_INET, SOCK_STREAM); // creates initial socket
 
-    Router* router = new Router(tpool, fetch, cluster, celerity);
+    // Router* router = new Router(tpool, fetch, cluster, celerity);
+    Router* router = new Router(tpool, fetch, cluster);
 
     router->bind(ROUTE_API, "/rsi", apiRsi);
     // router->bind(ROUTE_API, "/ohlc", apiOhlc);
@@ -139,7 +140,7 @@ int main(int argc, char* argv[]) {
 
     run(&server, &clients, ctx, tpool, router);
 
-    delete celerity;
+    // delete celerity;
     delete cluster;
     delete router;
     

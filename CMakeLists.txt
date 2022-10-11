@@ -68,12 +68,15 @@ find_package(Threads REQUIRED)
 # target_link_libraries(curl-demo ${CURL_LIBRARIES})
 
 #if (NOT TARGET prizm-cxx)
-#    add_subdirectory(${DEPS_DIR}/prizm-cxx)
-#    include_directories(${DEPS_DIR}/prizm-cxx/include)
+add_subdirectory(${DEPS_DIR}/prizm-cxx)
+include_directories(${DEPS_DIR}/prizm-cxx/include)
 #endif()
 
-add_subdirectory(${DEPS_DIR}/celerity)
-include_directories(${DEPS_DIR}/celerity/build/include)
+#add_subdirectory(${DEPS_DIR}/prizm-cxx)
+#include_directories(${DEPS_DIR}/prizm-cxx/include)
+
+#add_subdirectory(${DEPS_DIR}/celerity)
+#include_directories(${DEPS_DIR}/celerity/build/include)
 
 include_directories(${DEPS_DIR}/openssl/include)
 # include_directories(${BUILD_DIR}/libzmq/include)
@@ -97,7 +100,7 @@ add_executable(client example/client.cc)
 
 
 target_link_libraries(server PRIVATE jericho)
-target_link_libraries(server PRIVATE celerity)
+#target_link_libraries(server PRIVATE celerity)
 target_link_libraries(server PRIVATE crypto)
 target_link_libraries(server PRIVATE ssl)
 target_link_libraries(server PRIVATE curl)

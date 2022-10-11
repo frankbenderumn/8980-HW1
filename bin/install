@@ -9,7 +9,7 @@ chmod +x ./bin/nebulaui
 chmod +x ./bin/celerity
 ./bin/prizm install
 ./bin/openssl install
-./bin/nebulaui update
+./bin/nebulaui install
 ./bin/celerity install
 chmod 000 ./bin/openssl
 chmod 000 ./bin/prizm
