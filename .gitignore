@@ -1,4 +1,4 @@
-*.pem
+# *.pem
 # frontend/assets/images/*
 # frontend/*
 deps/*
