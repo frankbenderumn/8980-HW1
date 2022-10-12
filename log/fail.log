@@ -61,3 +61,12 @@ FAIL-[2022-10-07 18:38:00]-/mnt/d/jericho-devel/core/src/server/socket.cc-int so
 FAIL-[2022-10-07 18:39:52]-/mnt/d/jericho-devel/core/src/server/socket.cc-int socket_create(const char*, int, int, int, int)-70-bind() failed.
 FAIL-[2022-10-07 20:34:48]-/mnt/d/jericho-devel/core/src/server/client.cc-fd_set wait_on_clients(int, Client**)-127-select() failed
 FAIL-[2022-10-11 00:48:15]-/mnt/d/jericho-devel/core/src/server/socket.cc-int socket_create(const char*, int, int, int, int)-70-bind() failed.
+FAIL-[2022-10-11 16:57:59]-/Users/josephbender/Desktop/8980-HW1/core/src/server/socket.cc-int socket_create(const char *, int, int, int, int)-70-bind() failed.
+FAIL-[2022-10-11 17:09:16]-/Users/josephbender/Desktop/8980-HW1/core/src/server/socket.cc-int socket_create(const char *, int, int, int, int)-70-bind() failed.
+FAIL-[2022-10-11 17:09:16]-/Users/josephbender/Desktop/8980-HW1/core/src/server/socket.cc-int socket_create(const char *, int, int, int, int)-70-bind() failed.
+FAIL-[2022-10-11 17:09:16]-/Users/josephbender/Desktop/8980-HW1/core/src/server/socket.cc-int socket_create(const char *, int, int, int, int)-70-bind() failed.
+FAIL-[2022-10-11 17:09:16]-/Users/josephbender/Desktop/8980-HW1/core/src/server/socket.cc-int socket_create(const char *, int, int, int, int)-70-bind() failed.
+FAIL-[2022-10-11 17:09:16]-/Users/josephbender/Desktop/8980-HW1/core/src/server/socket.cc-int socket_create(const char *, int, int, int, int)-70-bind() failed.
+FAIL-[2022-10-11 17:09:16]-/Users/josephbender/Desktop/8980-HW1/core/src/server/socket.cc-int socket_create(const char *, int, int, int, int)-70-bind() failed.
+FAIL-[2022-10-11 17:09:16]-/Users/josephbender/Desktop/8980-HW1/core/src/server/socket.cc-int socket_create(const char *, int, int, int, int)-70-bind() failed.
+FAIL-[2022-10-11 17:09:16]-/Users/josephbender/Desktop/8980-HW1/core/src/server/socket.cc-int socket_create(const char *, int, int, int, int)-70-bind() failed.
